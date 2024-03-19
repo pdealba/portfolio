@@ -1,121 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap");
 
 body {
-    background-color: black;
-    color: white;
-    font-family: "Mukta Vaani", sans-serif;
-    overflow-x: hidden
+  background-color: black;
+  color: white;
+  font-family: "Mukta Vaani", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Page load in animations */
 .container {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .container.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
+/* Remove <a> default properties */
 a {
-    text-decoration: none;
-    color: inherit;
-    outline: none;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }
 
 a:hover {
-    color: inherit;
+  color: inherit;
 }
 
 .container {
-    max-width: 35rem; /*Old value: 42rem*/
+  max-width: 35rem; /*Old value: 42rem*/
 }
-
 
 /* Title styles*/
 .title {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 
 .title h1 {
-    font-weight: 500;
-    font-style: normal;
-    font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
 }
 
 h3 {
-    font-weight: 700;
-    font-style: bold;
+  font-weight: 700;
+  font-weight: bold;
 }
 
 .hightlight {
-    background: linear-gradient(
-        to bottom,
-        transparent 50%, /* Adjust position to control thickness */
-        #6A5ACD 80%,
-        transparent 50% /* Adjust position to control thickness */
-    );
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    /* Adjust position to control thickness */ #6a5acd 80%,
+    transparent 50% /* Adjust position to control thickness */
+  );
 }
 
 .highlight-cycle {
-    background: radial-gradient(circle, #8A2BE2, #FF7F50);
-    background-clip: text;
-    -webkit-background-clip: text; /* For Safari/Chrome */
-    color: transparent;
-    animation: highlight-cycle 15s linear infinite;
-    background-size: 200% 200%;
+  background: radial-gradient(circle, #8a2be2, #ff7f50);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  color: transparent;
+  animation: highlight-cycle 15s linear infinite;
+  background-size: 200% 200%;
 }
 
 @keyframes highlight-cycle {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 /* Online symbol */
 .bi-circle-fill {
-    color: lightgreen;
-    font-size: 10px;
-    margin-right: 5px;
+  color: lightgreen;
+  font-size: 10px;
+  margin-right: 5px;
 }
 
 .contactButtons div {
-    background-color: #333333;
-    border-radius: 20px;
-    display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-    padding: 8px 20px;
-    transform: scale(1);
-    transition: transform 0.3s;
+  background-color: #333333;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  padding: 8px 20px;
+  transform: scale(1);
+  transition: transform 0.3s;
 }
 
 .contactButtons div:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.2);
+  background-color: white;
+  color: black;
+  transform: scale(1.2);
+}
 
+@media (max-width: 370px) {
+  .contactButtons div {
+    padding: 10px 11px;
+  }
 }
 
 p {
-    color: #888888;
+  color: #888888;
 }
 
 .separator {
-    background-color: #2F2F2F;
-    height: 2px;
-    width: 100%;
-    margin: 20px 0;
-
+  background-color: #2f2f2f;
+  height: 2px;
+  width: 100%;
+  margin: 20px 0;
 }
 
 /* Timeline */
@@ -163,7 +167,7 @@ p {
   }
   .timeline-middle {
     position: relative;
-    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
     width: 3px;
     height: 100%;
   }
@@ -177,50 +181,49 @@ p {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 /* box */
 
 .box {
-    background-color: #2f2f2f;
-    position: relative;
-    margin-top: 15px;
-    padding: 25px 30px 10px 30px;
-    height: 11rem;
+  background-color: #2f2f2f;
+  position: relative;
+  margin-top: 15px;
+  padding: 25px 30px 10px 30px;
+  height: 11rem;
 }
 
 .box:hover {
-    background-color: #1e1e1e;
+  background-color: #1e1e1e;
 }
 
 .arrow {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    color: #2f2f2f;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: #2f2f2f;
 }
 
 .box:hover .arrow {
-    color: white;
+  color: white;
 }
 
-
 .techIcons {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .col-4 p {
-    color: white;
+  color: white;
 }
 
 #resumeButton {
-    background-color: #333333;
-    border-radius: 20px;
-    text-align: center;
-    padding: 8px 20px;
-    margin-top: 20px;
+  background-color: #333333;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 20px;
+  margin-top: 20px;
 }
